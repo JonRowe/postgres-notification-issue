@@ -14,12 +14,14 @@ defmodule NotificationIssue.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      mod: {NotificationIssue, []},
       extra_applications: [:logger]
     ]
   end
 
   defp deps do
     [
+      {:postgrex, "~> 0.14.0"}
     ]
   end
 end

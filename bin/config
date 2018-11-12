@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# These are homebrew defaults, change to suit.
+export DB_USER=`whoami`
+export DB_PASSWORD=""
+export DB_NAME=`whoami`

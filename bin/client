@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source "${BASH_SOURCE%/*}/config"
+
+psql "postgres://${DB_USER?}:${DB_PASSWORD?}@localhost/${DB_NAME?}" -c "NOTIFY channelName, 'Oh hai!';"
